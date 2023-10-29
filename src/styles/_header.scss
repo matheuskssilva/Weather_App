@@ -1,0 +1,61 @@
+@use 'variables';
+.header {
+    .container {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        padding-top: 25px;
+        margin-left: 600px;
+        .search {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row-reverse;
+            input {
+                width: 400px;
+                height: 45px;
+                background-color: variables.$bgInput;
+                border-radius: 20px;
+                border: none;
+                padding: 11px 44px;
+                outline: none;
+                position: relative;
+                font-size: 14px;
+                color: variables.$white;
+            }
+            img {
+                width: 16px;
+                height: 16px;
+                position: absolute;
+                margin-right: 350px;
+                cursor: pointer;
+            }
+        }
+        .location {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row-reverse;
+            margin-left: 500px;
+            button {
+                position: relative;
+                background-color: variables.$purple;
+                width: 220px;
+                height: 45px;
+                border: none;
+                border-radius: 20px;
+                font-size: 14px;
+                color: variables.$grey2;
+                text-align: center;
+                padding: 11px 51px;
+                cursor: pointer;
+                font-weight: 400;
+            }
+            img {
+                position: absolute;
+                margin-right: 160px;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+@use 'variables';
+.hero {
+    display: flex;
+    flex-direction: column;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 110px;
+        .temp_now {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: variables.$bgSecondary;
+            width: 270px;
+            height: 210px;
+            border-radius: 20px;
+            .title {
+                font-size: 16px;
+                font-weight: 400;
+                color: variables.$white;
+                margin-right: 130px;
+            }
+            .temp {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-bottom: 1px solid #FFF;
+                span {
+                    font-size: 40px;
+                    color: variables.$white;
+                }
+                .temp_graus {
+                    font-size: 30px;
+                }
+                img {
+                    width: 48px;
+                    height: 48px;
+                    margin-left: 56px;
+                }
+                .temperatura {
+                    display: flex;
+                    flex-direction: column;
+                    .text_temp {
+                        display: flex;
+                        flex-direction: row;
+                    }
+                    .clima {
+                        font-size: 12px;
+                        color: white;
+                        padding-bottom: 7px;
+                        margin-left: 4px;
+                    }
+                }
+            }
+            .day__location {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                margin-right: 50px;
+                width: 100%;
+                margin-top: 12px;
+                span {
+                    font-size: 14px;
+                    color: variables.$grey;
+                }
+                img {
+                    width: 16px;
+                    height: 16px;
+                }
+                .location {
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@use 'variables.scss';
+.temp_forecast {
+    h1 {
+        font-weight: 900;
+        font-size: 22px;
+        color: variables.$white;
+        margin-top: 15px;
+    }
+    .container {
+        background-color: variables.$bgSecondary;
+        border-radius: 20px;
+        margin-top: 15px;
+        padding: 0 23px;
+        width: 270px;
+        height: 300px;
+        .forecast {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding-top: 20px;
+            text-align: center;
+            width: 100%;
+            gap: 10px;
+            color: variables.$grey;
+            span {
+                font-size: 18px;
+                font-weight: bold;
+            }
+            h2 {
+                font-size: 12px;
+            }
+            img {
+                width: 35px;
+                height: 35px;
+            }
+            .temp {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+            }
+        }
+    }
+}

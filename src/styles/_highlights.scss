@@ -1,0 +1,168 @@
+@use 'variables';
+.highlights {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding-top: 30px;
+    position: absolute;
+    top: 60px;
+    left: 100px;
+    right: 0;
+    background-color: variables.$bgSecondary;
+    width: 1030px;
+    height: 430px;
+    border-radius: 20px;
+    gap: 5px;
+    h1 {
+        color: #FFF;
+        margin-left: 24px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .cards {
+        display: flex;
+        align-items: center;
+        margin-left: 23px;
+        width: 995px;
+        gap: 10px;
+        .card {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #19181B;
+            width: 490px;
+            height: 170px;
+            border-radius: 20px;
+            gap: 5px;
+            .title {
+                font-size: 18px;
+                color: variables.$grey;
+                font-weight: 400;
+                padding-bottom: 34px;
+                margin-left: 23px;
+            }
+            .numbers {
+                display: flex;
+                gap: 45px;
+                flex-direction: row;
+                margin-left: 23px;
+                h4 {
+                    font-size: 12px;
+                    color: variables.$grey;
+                }
+                span {
+                    font-size: 25px;
+                    font-weight: bold;
+                    color: variables.$white;
+                }
+                img {
+                    width: 39px;
+                    height: 21px;
+                }
+            }
+        }
+        .card-secondary {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 490px;
+            gap: 5px;
+            .title {
+                padding-bottom: 10px;
+                padding-top: 35px;
+            }
+            .text {
+                display: flex;
+                align-items: center;
+                gap: 115px;
+                margin-bottom: 20px;
+            }
+            .nascer_sol {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                margin-left: 23px;
+                .text {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                    span {
+                        font-size: 30px;
+                        font-weight: 400;
+                        color: variables.$white;
+                    }
+                }
+                h4 {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: variables.$grey;
+                    margin-left: 30px;
+                    margin-bottom: 5px;
+                }
+                img {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+            .por_sol {
+                .text {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 0;
+                    h4 {
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: variables.$grey;
+                        margin-bottom: 5px;
+                    }
+                    span {
+                        font-size: 30px;
+                        font-weight: 400;
+                        color: variables.$white;
+                    }
+                }
+            }
+        }
+    }
+    .card__description {
+        display: flex;
+        .card_secondary {
+            display: flex;
+            flex-direction: column;
+            margin-left: 24px;
+            margin-top: 17px;
+            .text {
+                width: 227px;
+                height: 120px;
+                border-radius: 20px;
+                background-color: #19181B;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h2 {
+                    font-size: 18px;
+                    color: variables.$grey;
+                    font-weight: 400;
+                    margin-left: 23px;
+                    margin-bottom: 18px;
+                }
+                .description {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: row;
+                    gap: 77px;
+                    span {
+                        font-size: 25px;
+                        font-weight: 400;
+                        color: variables.$white;
+                    }
+                }
+            }
+        }
+    }
+}

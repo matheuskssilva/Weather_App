@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,900;1,6..12,1000&display=swap" rel="stylesheet">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="../dist/css/main.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="container">
+                <div class="search">
+                    <input type="text" placeholder="Pesquise a Cidade..." id="input">
+                    <img src="../dist/images/weather_icons/search (1) 1.svg" alt="Icon Search">
+                </div>
+                <div class="location">
+                    <button>Localização Atual</button>
+                    <img src="../dist/images/weather_icons/crosshair 1.svg" alt="Icon crosshair">
+                </div>
+            </div>
+        </header>
+
+        <section class="highlights">
+            <h1>Destaques de hoje</h1>
+            <div class="cards">
+                <div class="card">
+                    <h2 class="title">Índice de qualidade do ar</h2>
+                    <div class="numbers">
+                        <img src="../dist/images/weather_icons/Vector.svg" alt="">
+                        <div class="text">
+                            <h4>PM25</h4>
+                            <span>3.90</span>
+                        </div>
+                        <div class="text">
+                            <h4>SO2</h4>
+                            <span>7.75</span>
+                        </div>
+                        <div class="text">
+                            <h4>NO2</h4>
+                            <span>33.6</span>
+                        </div>
+                        <div class="text">
+                            <h4>03</h4>
+                            <span>38.6</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-secondary">
+                    <h2 class="title">Nascer do Sol & Por do Sol</h2>
+                    <div class="text">
+                        <div class="nascer_sol">
+                            <h4>Nascer Do Sol</h4>
+                            <div class="text">
+                                <img src="../dist//images/weather_icons/nascerSol.svg" alt="Img nascer do Sol">
+                                <span>6:45 AM</span>
+                            </div>
+                        </div>
+                        <div class="por_sol">
+                            <div class="text">
+                                <h4>Pôr Do Sol</h4>
+                                <span>5:39 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card__description">
+                <div class="card_secondary">
+                    <div class="text">
+                        <h2>Umidade</h2>
+                        <div class="description">
+                            <img src="../dist/images/weather_icons/umidade.svg" alt="Umidade Icon">
+                            <span>82%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_secondary">
+                    <div class="text">
+                        <h2>Pressão</h2>
+                        <div class="description">
+                            <img src="../dist/images/weather_icons/50d 2.svg" alt="Pressão Icon">
+                            <span>1025hPa</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_secondary">
+                    <div class="text">
+                        <h2>Visibilidade</h2>
+                        <div class="description">
+                            <img src="../dist/images/weather_icons/visibilidade.svg" alt="Visibilidade Icon">
+                            <span>10 KM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_secondary">
+                    <div class="text">
+                        <h2>Sensação Térmica</h2>
+                        <div class="description">
+                            <img src="../dist/images/weather_icons/termica.svg" alt="Sensação Térmica Icon">
+                            <span>2°C</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero__container">
+            <div class="temp_now">
+                <h2 class="title">Agora</h2>
+                <div class="temp">
+                    <div class="temperatura">
+                        <div class="text_temp">
+                            <h1><span>15</span><span>°</span><span class="temp_graus">C</span></h1>
+                            <img src="../dist/images/weather_icons/02d 2.svg" alt="">
+                        </div>
+                        <span class="clima">Ensolarado</span>
+                    </div>
+                </div>
+                <div class="day__location">
+                    <h2>
+                        <img src="../dist/images/weather_icons/calendar 1.svg" alt="Icon Calendario">
+                        <span>Domingo 19, Set</span>
+                    </h2>
+
+                    <h2 class="location">
+                        <img src="../dist//images/weather_icons/geo-alt 1.svg" alt="Icon Location">
+                        <span>Americana, São Paulo</span>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="temp_forecast">
+                <h1>Previsão de 5 dias</h1>
+                <div class="container">
+                    <div class="forecast">
+                        <div class="temp">
+                            <img src="../dist/images/weather_icons/01n 1.svg" alt="Lua">
+                            <span>7°C</span>
+                        </div>
+                        <h2>20 set</h2>
+                        <h2>Segunda-feira</h2>
+                    </div>
+                    <div class="forecast">
+                        <div class="temp">
+                            <img src="../dist/images/weather_icons/03d 1.svg" alt="">
+                            <span>10°C</span>
+                        </div>
+                        <h2>21 set</h2>
+                        <h2>Terça-feira</h2>
+                    </div>
+                    <div class="forecast">
+                        <div class="temp">
+                            <img src="../dist/images/weather_icons/02n 1.svg" alt="">
+                            <span>12°C</span>
+                        </div>
+                        <h2>22 set</h2>
+                        <h2>Quarta-feira</h2>
+                    </div>
+                    <div class="forecast">
+                        <div class="temp">
+                            <img src="../dist/images/weather_icons/10n 1.svg" alt="">
+                            <span>07°C</span>
+                        </div>
+                        <h2>23 set</h2>
+                        <h2>Quinta-feira</h2>
+                    </div>
+                    <div class="forecast">
+                        <div class="temp">
+                            <img src="../dist/images/weather_icons/02d 2.svg" alt="">
+                            <span>15</span><span>°</span><span>C</span>
+                        </div>
+                        <h2>24 set</h2>
+                        <h2>Sexta-feira</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlights__today">
+
+            </div>
+
+            <div class="today__forecast">
+
+            </div>
+
+            <div class="tomorrow__forecast">
+
+            </div>
+        </div>
+
+    </section>
+
+    </div>
+</body>
+
+</html>
